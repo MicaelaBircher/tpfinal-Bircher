@@ -1,0 +1,30 @@
+/* HERO */ 
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    position: relative;
+    display:inline-block;
+
+    .parrafoLorem {
+        color: $color-pantalla;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .contacto {
+        text-decoration: none;
+        border: $border ;
+        background-color: $color-principal;
+        text-transform: uppercase;
+        padding: 0.5rem 1.5rem ;
+        border-radius: 4px;
+
+        @include anclas;
+        transition: all 0.5s ease;
+
+        &:hover {
+        color: $color-fuentes-secundarios;
+      }
+    }
+  }

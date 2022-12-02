@@ -1,0 +1,200 @@
+@mixin anclas {
+    color: $color-fuentes ;
+    text-decoration: none;
+}
+
+/* TITULO Y DISEÑO WEB*/ 
+.encabezado {
+  color: black;
+
+    .tituloPrincipal {
+      background-color: $color-principal ;
+      text-align: center;
+      justify-content: space-between;
+      color: $color-fuentes ;
+      padding: 40px;
+      margin: 65px 5px 10px 5px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+    .lista {
+      text-align: start;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      padding: 4px;
+      margin: auto;
+    }
+
+    li {
+      display: inline;
+      background-color: $color-principal ;
+      padding: 8px;
+      margin: 4px;
+      border-radius: 5px;
+      border: $border;
+    }
+
+    a {
+      @include anclas ;
+      transition: all 0.5s ease ;
+      &:hover {
+        color: $color-fuentes-secundarios ;
+      }
+    }
+}
+ 
+
+  /* TITULO DEL CONTENIDO */
+  
+  .h3 {
+    background-color: $color-principal;
+    padding: 4px;
+    width: 250px;
+    text-align: center;
+    border: $border ;
+  }
+  
+  
+  /* PÁRRAFO */
+  
+  .parrafoLorem {
+    padding: 10px;
+    margin: 5px 5px 10px 5px;
+  }
+  
+  /* DRECHOS AUTOR */
+  
+  .footer {
+    margin: 60px 5px 30px 600px;
+    color: $color-fuentes ;
+    font-size: 18px;
+  }
+
+
+  /* CONTACTO */ 
+  
+  .div {
+    margin: 15px;
+    color: $color-fuentes; 
+    font-size: 18px;
+  }
+
+
+  /* REDES SOCIALES */
+  
+  .redesWeb {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .span {
+    display: block;
+    background-color: $color-principal;
+    padding: 15px;
+    border-radius: 5px;
+    border: $border;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 200px 10px 200px;
+  }
+  
+  /* VIDEO*/ 
+
+
+  /* MEDIA MOBILE */
+  
+  @media (max-width: 600px) {
+    .encabezado {
+        color: white;
+    }
+    
+    .div {
+      color: white;
+    }
+  
+    .footer {
+      color: white;
+      margin: 8px 5px 8px 5px;
+    }
+  
+    .h3 {
+      color: white;
+      text-align: center;
+      margin: 90px 200px 30px 30px;
+    }
+  
+    .span {
+      padding: 15px;
+      margin: 10px 50px 10px 20px;
+    }
+  
+    .redesWeb {
+      margin: 10px 50px 10px 20px;
+    }
+  }
+  
+  /*  MEDIA TABLET */
+
+  @media (min-width: 601px) {
+    .encabezado {
+        color: black;
+    }
+    
+    .div {
+      color: $color-fuentes;
+      
+    }
+  
+    .footer {
+      color: $color-fuentes;
+      margin: 10px 40px 10px 40px;
+    }
+  
+    .h3 {
+      color: black;
+      text-align: center;
+      margin: 90px 200px 30px 265px;
+    }
+  
+    .redesWeb {
+      margin: 10px 200px 10px 210px;
+    }
+  }
+  
+
+  /* MEDIA DESKTOP*/ 
+
+  @media (min-width: 1024px) {
+     
+    .div {
+      color: black;
+    }
+  
+    .footer {
+      color: black;
+      margin: 10px 200px 10px 150px;
+    }
+  
+    .h3 {
+      color: black;
+      text-align: center;
+      margin: 90px 200px 30px 625px;
+    }
+  
+    .redesWeb {
+      margin: 10px 200px 10px 200px;
+    }
+  }
+
+
+
+
+
+
+  
